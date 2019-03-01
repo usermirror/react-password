@@ -1,0 +1,47 @@
+{
+  "license": "MIT",
+  "version": "0.0.1",
+  "name": "react-password",
+  "description": "React components for password management",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-transition-group": "^2.6.0",
+    "zxcvbn": "^4.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@types/classnames": "^2.2.7",
+    "@types/react": "^16.8.3",
+    "@types/react-transition-group": "^2.0.16",
+    "@types/zxcvbn": "^4.4.0",
+    "ava": "^1.0.1",
+    "microbundle": "^0.9.0",
+    "parcel-bundler": "^1.11.0",
+    "ts-node": "^7.0.1"
+  },
+  "scripts": {
+    "test": "ava",
+    "clean": "rm -rf lib",
+    "build": "microbundle -o lib",
+    "watch": "microbundle watch -o lib",
+    "docs": "parcel build docs/src/* -d docs/min/",
+    "dev": "parcel watch --no-hmr docs/src/* -d docs/min/"
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "keywords": [
+    "react",
+    "password",
+    "password input"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "exclude": ["node_modules", "test/**", "lib", "docs"],
+  "compilerOptions": {
+    "jsx": "react",
+    "outDir": "./lib",
+    "sourceMap": true,
+    "rootDir": "./src",
+    "lib": ["es6", "dom"],
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "downlevelIteration": true
+  }
+}
